@@ -2,6 +2,7 @@ import Contents from './Component/contents/contents';
 import Banner from './Component/banner/banner';
 import './index.css'
 import Footer from './Component/footer/footer';
+import Category from './Component/category/category';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       < Banner />
       < Contents />
       < Footer />
-
+      < Category />
     </div>
     
     </>
