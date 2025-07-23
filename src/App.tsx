@@ -5,9 +5,10 @@ import Footer from './Component/footer/footer';
 import Category from './Component/category/category';
 import Product_Gallery from './Component/product_gallery/product_gallery';
 import Banner_setup from './Component/banner/banner_setup';
-import Chating_list from './Component/chatting/chatting_list';
 import Chatting_list from './Component/chatting/chatting_list';
 import Support_ticket from './Component/support/support_ticket';
+import Inhouse_sale from './Component/Inhouse/Inhouse_sale';
+import Transaction_report from './Component/transaction/transaction_report';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
     <div className='w-full-screen px-6 py-3'>
-      < Banner />
+      {/* < Banner />
       < Contents />
       < Footer />
       < Category />
@@ -24,6 +25,8 @@ function App() {
       < Banner_setup />
       < Chatting_list />
       < Support_ticket />
+      < Inhouse_sale /> */}
+      < Transaction_report />
     </div>
     
     </>
