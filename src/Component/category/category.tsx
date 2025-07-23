@@ -113,7 +113,7 @@ export default function Category() {
                 <table className="min-w-full table-auto">
                     <thead className="bg-gray-100">
                         <tr>
-                            <th className="px-4 py-2 font-semibold text-black">ID</th>
+                            <th className="text-left px-4 py-2 font-semibold text-black">ID</th>
                             <th className="px-4 py-2 font-semibold text-black">Category Image</th>
                             <th className="px-4 py-2 font-semibold text-black">Name</th>
                             <th className="px-4 py-2 font-semibold text-black">Priority</th>
