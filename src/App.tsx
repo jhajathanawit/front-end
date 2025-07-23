@@ -5,6 +5,8 @@ import Footer from './Component/footer/footer';
 import Category from './Component/category/category';
 import Product_Gallery from './Component/product_gallery/product_gallery';
 import Banner_setup from './Component/banner/banner_setup';
+import Chating_list from './Component/chatting/chatting_list';
+import Chatting_list from './Component/chatting/chatting_list';
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       < Category />
       < Product_Gallery />
       < Banner_setup />
+      < Chatting_list />
     </div>
     
     </>
