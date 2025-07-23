@@ -7,6 +7,7 @@ import Product_Gallery from './Component/product_gallery/product_gallery';
 import Banner_setup from './Component/banner/banner_setup';
 import Chating_list from './Component/chatting/chatting_list';
 import Chatting_list from './Component/chatting/chatting_list';
+import Support_ticket from './Component/support/support_ticket';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       < Product_Gallery />
       < Banner_setup />
       < Chatting_list />
+      < Support_ticket />
     </div>
     
     </>
