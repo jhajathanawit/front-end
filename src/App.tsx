@@ -12,6 +12,9 @@ import Transaction_report from './Component/transaction/transaction_report';
 import Expense_transactions from './Component/transaction/expense_transactions';
 import Refund_transactions from './Component/transaction/refund_transactions';
 import Order_report from './Component/order/order_report';
+import Product_report from './Component/product/product_report';
+import Product_stock from './Component/product/product_stock';
+import Product_wish from './Component/product/product_wish';
 
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
       < Expense_transactions />
       < Refund_transactions />
       < Order_report />
+      < Product_report />
+      < Product_stock />
+      < Product_wish />
     </div>
     
     </>
