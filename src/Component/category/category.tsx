@@ -97,7 +97,7 @@ export default function Category() {
                                 placeholder="Search by category name"
                                 className="px-3 py-2 outline-none text-sm placeholder-gray-400"
                             />
-                            <button className="bg-gray-100 px-3 py-2 hover:bg-gray-200">
+                            <button className="bg-gray-100 px-3 py-3 hover:bg-gray-200">
                                 <FiSearch />
                             </button>
                         </div>
