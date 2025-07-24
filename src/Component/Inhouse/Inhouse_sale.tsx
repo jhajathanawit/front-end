@@ -33,18 +33,20 @@ export default function Inhouse_sale() {
                     </div>
                 </div>
 
-                <table className="min-w-full table-auto">
-                    <thead className="bg-gray-100">
-                        <tr>
-                            <th className="text-left px-4 py-2 font-semibold text-black">SL</th>
-                            <th className="text-left px-4 py-2 font-semibold text-black">Product Name</th>
-                            <th className="px-4 py-2 font-semibold text-black">Total Sale</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div className="overflow-x-auto">
+                    <table className="mb-4 min-w-full table-auto">
+                        <thead className="bg-gray-100">
+                            <tr>
+                                <th className="text-left px-4 py-4 font-semibold text-black">SL</th>
+                                <th className="px-4 py-4 font-semibold text-black">Product Name</th>
+                                <th className="px-4 py-4 font-semibold text-black">Total Sale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
 
                 <div className="flex flex-col justify-center items-center p-2 mt-6 gap-2">
                     <MdRunningWithErrors className="mt-20 text-9xl text-black-500" />

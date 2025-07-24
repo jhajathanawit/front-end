@@ -9,6 +9,9 @@ import Chatting_list from './Component/chatting/chatting_list';
 import Support_ticket from './Component/support/support_ticket';
 import Inhouse_sale from './Component/Inhouse/Inhouse_sale';
 import Transaction_report from './Component/transaction/transaction_report';
+import Expense_transactions from './Component/transaction/expense_transactions';
+import Refund_transactions from './Component/transaction/refund_transactions';
+import Order_report from './Component/order/order_report';
 
 
 function App() {
@@ -17,7 +20,7 @@ function App() {
   return (
     <>
     <div className='w-full-screen px-6 py-3'>
-      {/* < Banner />
+      < Banner />
       < Contents />
       < Footer />
       < Category />
@@ -25,8 +28,11 @@ function App() {
       < Banner_setup />
       < Chatting_list />
       < Support_ticket />
-      < Inhouse_sale /> */}
+      < Inhouse_sale />
       < Transaction_report />
+      < Expense_transactions />
+      < Refund_transactions />
+      < Order_report />
     </div>
     
     </>

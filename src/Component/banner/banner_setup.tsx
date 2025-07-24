@@ -78,7 +78,7 @@ export default function Banner_setup() {
                         <p className="font-bold text-sm text-blue-600 mb-4">( Ratio 4:1 )</p>
 
                         <label className="flex flex-col items-center justify-center w-40 h-40 border-2 border-dashed rounded cursor-pointer hover:bg-gray-100">
-                            <input type="file" className="hidden" />
+                            <input type="file" accept="image/*" className="hidden" />
                             <IoDocumentTextOutline className="text-2xl text-black-500" />
                             <span className="font-bold text-sm text-blue-500">Click to upload</span>
                             <span className="font-bold text-sm text-black-500">or drag and drop</span>
@@ -124,20 +124,22 @@ export default function Banner_setup() {
                     </div>
                 </div>
 
-                <table className="min-w-full table-auto">
-                    <thead className="bg-gray-100">
-                        <tr>
-                            <th className="text-left px-4 py-2 font-semibold text-black">SL</th>
-                            <th className="px-4 py-2 font-semibold text-black">Image</th>
-                            <th className="px-4 py-2 font-semibold text-black">Banner Type</th>
-                            <th className="px-4 py-2 font-semibold text-black">Published</th>
-                            <th className="px-4 py-2 font-semibold text-black">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div className="overflow-x-auto">
+                    <table className="mb-4 min-w-full table-auto">
+                        <thead className="bg-gray-100">
+                            <tr>
+                                <th className="text-left px-4 py-4 font-semibold text-black">SL</th>
+                                <th className="px-4 py-2 font-semibold text-black">Image</th>
+                                <th className="px-4 py-2 font-semibold text-black">Banner Type</th>
+                                <th className="px-4 py-2 font-semibold text-black">Published</th>
+                                <th className="px-4 py-2 font-semibold text-black">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
 
                 <div className="flex flex-col justify-center items-center p-2 mt-6 gap-2">
                     <MdRunningWithErrors className="mt-20 text-9xl text-black-500" />

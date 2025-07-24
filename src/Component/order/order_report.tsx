@@ -1,45 +1,23 @@
-import { FcPositiveDynamic } from "react-icons/fc";
 import { PiTrolleyDuotone } from "react-icons/pi";
 import { FiSearch } from "react-icons/fi";
 import { FaFileExcel } from "react-icons/fa";
 import { MdRunningWithErrors } from "react-icons/md";
 import { GrDocumentPdf } from "react-icons/gr";
+import { CgReorder } from "react-icons/cg";
 
-export default function Transaction_report() {
+export default function Order_report() {
     return (
         <>
             <div className="mb-4 flex items-center p-2 mt-6 gap-2 ">
-                <FcPositiveDynamic className="text-2xl text-black-500" />
-                <h1 className="text-2xl font-bold">Transaction Report</h1>
+                <CgReorder className="text-2xl text-yellow-500" />
+                <h1 className="text-2xl font-bold">Order Report</h1>
             </div>
 
-            <div className="flex space-x-4">
-                <button className="px-4 py-2 rounded-full bg-blue-700 text-white font-semibold">
-                    Order Transactions
-                </button>
-                <button className="px-4 py-2 rounded-full text-gray-600 font-semibold">
-                    Expense Transactions
-                </button>
-                <button className="px-4 py-2 rounded-full text-gray-600 font-semibold">
-                    Refund Transactions
-                </button>
-            </div>
-
-            <div className="p-4 mt-5 shadow-md border rounded-md flex flex-col gap-4">
-                <div className="flex">
+            <div className="p-4 mt-5 shadow-md border rounded-md gap-4">
+                <div className="flex items-end gap-4">
                     <div className="w-1/4">
                         <h1 className="font-bold text-lg">Filter Data</h1>
-                        <label className="text-gray-500">Select status</label>
-                        <select className="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300">
-                            <option disabled selected>All status</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-
-                    <div className="w-1/4 ml-2 mt-7">
-                        <label className="text-gray-500">Select seller</label>
+                        <label className="text-gray-500">Select Seller</label>
                         <select className="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300">
                             <option disabled selected>All</option>
                             <option>1</option>
@@ -48,32 +26,21 @@ export default function Transaction_report() {
                         </select>
                     </div>
 
-                    <div className="w-1/4 ml-2 mt-7">
-                        <label className="text-gray-500">Select customer</label>
+                    <div className="w-1/4">
+                        <label className="text-gray-500">Select Date</label>
                         <select className="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300">
-                            <option disabled selected>All customer</option>
+                            <option disabled selected>This year</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                         </select>
                     </div>
 
-                    <div className="w-1/4 ml-2 mt-7">
-                        <label className="text-gray-500">Select date</label>
-                        <select className="mt-2 w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300">
-                            <option disabled selected>This Year</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
+                    <div className="w-1/6">
+                        <button type="submit" className="w-1/4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                            Filter
+                        </button>
                     </div>
-                </div>
-
-
-                <div className="flex justify-end px-4 pb-2">
-                    <button type="submit" className="ml-4 min-w-[120px] py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-                        Filter
-                    </button>
                 </div>
             </div>
 
@@ -90,14 +57,18 @@ export default function Transaction_report() {
                                 <h2 className="text-xs font-bold">Total Orders</h2>
                             </div>
                         </div>
-                        <div className="mt-6 mb-2 flex gap-32 justify-center px-2">
+                        <div className="mt-6 mb-16 flex gap-16 justify-center px-2">
+                            <div className="text-center">
+                                <h2 className="text-red-600 font-bold">0</h2>
+                                <p className="text-sm text-gray-600">Canceled</p>
+                            </div>
                             <div className="text-center">
                                 <h2 className="text-blue-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">In House Orders</p>
+                                <p className="text-sm text-gray-600">Ongoing</p>
                             </div>
                             <div className="text-center">
                                 <h2 className="text-green-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">Vendor Orders</p>
+                                <p className="text-sm text-gray-600">Completed</p>
                             </div>
                         </div>
                     </div>
@@ -107,29 +78,18 @@ export default function Transaction_report() {
                         <div className="flex items-center gap-3">
                             <PiTrolleyDuotone className="text-4xl" />
                             <div>
-                                <h1 className="text-2xl font-bold">0</h1>
-                                <h2 className="text-xs font-bold">Total Products</h2>
+                                <h1 className="text-2xl font-bold">$0.00</h1>
+                                <h2 className="text-xs font-bold">Total Order Amount</h2>
                             </div>
                         </div>
-                        <div className="mt-6 mb-2 flex gap-32 justify-center px-2">
+                        <div className="mt-6 mb-16 flex gap-32 justify-center px-2">
                             <div className="text-center">
-                                <h2 className="text-blue-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">In House Products</p>
+                                <h2 className="text-red-600 font-bold">$0.00</h2>
+                                <p className="text-sm text-gray-600">Due Amount</p>
                             </div>
                             <div className="text-center">
-                                <h2 className="text-green-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">Vendor Products</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Total Store */}
-                    <div className="pb-10 p-4 shadow-md border rounded-md">
-                        <div className="flex items-center gap-3">
-                            <PiTrolleyDuotone className="text-4xl" />
-                            <div>
-                                <h1 className="text-2xl font-bold">0</h1>
-                                <h2 className="text-xs font-bold">Total Stores</h2>
+                                <h2 className="text-green-600 font-bold">$0.00</h2>
+                                <p className="text-sm text-gray-600">Already Settled</p>
                             </div>
                         </div>
                     </div>
@@ -191,7 +151,7 @@ export default function Transaction_report() {
                         <div className="flex items-center border rounded-md overflow-hidden">
                             <input
                                 type="text"
-                                placeholder="Search by orders id"
+                                placeholder="Search by order id"
                                 className="px-3 py-2 outline-none text-sm placeholder-gray-400"
                             />
                             <button className="bg-gray-100 px-3 py-3 hover:bg-gray-200">
@@ -218,25 +178,14 @@ export default function Transaction_report() {
                             <tr>
                                 <th className="px-10 py-4 font-semibold text-black whitespace-nowrap">SL</th>
                                 <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Order Id</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Shop Name</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Customer Name</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Total Product Amount</th>
+                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Total Amount</th>
                                 <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Product Discount</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Coupon Discount</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Discounted Amount</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">VAT/TAX</th>
+                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Coupon Discoun</th>
                                 <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Shipping Charge</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Order Amount</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Delivered By</th>
+                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">VAT/TAX</th>
+                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Commission</th>
                                 <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Deliveryman Incentive</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Admin Discount</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Vendor Discount</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Admin Commission</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Admin Net Income</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Vendor Net Income</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Payment Method</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Payment Status</th>
-                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Action</th>
+                                <th className="px-10 py-2 font-semibold text-black whitespace-nowrap">Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -244,6 +193,7 @@ export default function Transaction_report() {
                         </tbody>
                     </table>
                 </div>
+                
                 <div className="flex flex-col justify-center items-center p-2 mt-6 gap-2">
                     <MdRunningWithErrors className="mt-20 text-9xl text-black-500" />
                     <p className="mb-10 text-sm text-gray-500 mt-2">No category found</p>
