@@ -60,15 +60,15 @@ export default function Order_report() {
                         <div className="mt-6 mb-16 flex gap-16 justify-center px-2">
                             <div className="text-center">
                                 <h2 className="text-red-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">Canceled</p>
+                                <p className="text-sm text-gray-600">Canceled<span className="inline-block ml-1 text-gray-400" title="Set the order priority">🛈</span></p>
                             </div>
                             <div className="text-center">
                                 <h2 className="text-blue-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">Ongoing</p>
+                                <p className="text-sm text-gray-600">Ongoing<span className="inline-block ml-1 text-gray-400" title="Set the order priority">🛈</span></p>
                             </div>
                             <div className="text-center">
                                 <h2 className="text-green-600 font-bold">0</h2>
-                                <p className="text-sm text-gray-600">Completed</p>
+                                <p className="text-sm text-gray-600">Completed<span className="inline-block ml-1 text-gray-400" title="Set the order priority">🛈</span></p>
                             </div>
                         </div>
                     </div>
@@ -85,11 +85,11 @@ export default function Order_report() {
                         <div className="mt-6 mb-16 flex gap-32 justify-center px-2">
                             <div className="text-center">
                                 <h2 className="text-red-600 font-bold">$0.00</h2>
-                                <p className="text-sm text-gray-600">Due Amount</p>
+                                <p className="text-sm text-gray-600">Due Amount<span className="inline-block ml-1 text-gray-400" title="Set the order priority">🛈</span></p>
                             </div>
                             <div className="text-center">
                                 <h2 className="text-green-600 font-bold">$0.00</h2>
-                                <p className="text-sm text-gray-600">Already Settled</p>
+                                <p className="text-sm text-gray-600">Already Settled<span className="inline-block ml-1 text-gray-400" title="Set the order priority">🛈</span></p>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@ export default function Order_report() {
                         </tbody>
                     </table>
                 </div>
-                
+
                 <div className="flex flex-col justify-center items-center p-2 mt-6 gap-2">
                     <MdRunningWithErrors className="mt-20 text-9xl text-black-500" />
                     <p className="mb-10 text-sm text-gray-500 mt-2">No category found</p>

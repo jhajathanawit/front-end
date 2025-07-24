@@ -32,7 +32,7 @@ export default function Category() {
                         {/* Category Name */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Category Name <span className="text-red-500">*</span> (EN)
+                                Category Name (EN)
                             </label>
                             <input
                                 type="text"
