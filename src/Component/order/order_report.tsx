@@ -141,7 +141,7 @@ export default function Order_report() {
                 <div className="flex justify-between items-center">
                     {/* ซ้าย */}
                     <div className="flex items-center space-x-2">
-                        <span className="font-semibold text-black">Total Transactions</span>
+                        <span className="font-semibold text-black">Total Orders</span>
                         <span className="font-bold px-2 py-0.5 text-sm rounded-full bg-gray-100 text-blue-600">0</span>
                     </div>
 
@@ -196,7 +196,7 @@ export default function Order_report() {
 
                 <div className="flex flex-col justify-center items-center p-2 mt-6 gap-2">
                     <MdRunningWithErrors className="mt-20 text-9xl text-black-500" />
-                    <p className="mb-10 text-sm text-gray-500 mt-2">No category found</p>
+                    <p className="mb-10 text-sm text-gray-500 mt-2">No order found</p>
                 </div>
             </div>
 
