@@ -26,6 +26,11 @@ import Withdraws from './Component/vendor/withdraws';
 import Withdraws_method_list from './Component/vendor/withdraw_method_list';
 import Add_new from './Component/delivery_men/add_new';
 import Deliverman_list from './Component/delivery_men/list';
+import Withdraw_request from './Component/delivery_men/withdraw_request';
+import Emergency_contact from './Component/delivery_men/emergency_contact';
+import Employee_role_setup from './Component/employees/employee_role_setup';
+import Employees_list from './Component/employees/employees_list';
+import Business_setup from './Component/business_setup/business_setup';
 
 function App() {
   
@@ -60,6 +65,11 @@ function App() {
       < Withdraws_method_list />
       < Add_new />
       < Deliverman_list />
+      < Withdraw_request />
+      < Emergency_contact />
+      < Employee_role_setup />
+      < Employees_list />
+      < Business_setup />
     </div>
     
     </>
