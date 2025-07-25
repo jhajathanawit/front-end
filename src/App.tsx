@@ -15,7 +15,17 @@ import Order_report from './Component/order/order_report';
 import Product_report from './Component/product/product_report';
 import Product_stock from './Component/product/product_stock';
 import Product_wish from './Component/product/product_wish';
-
+import Customer_list from './Component/customer/customer_list';
+import Customer_reviews from './Component/customer/customer_reviews';
+import Wallet from './Component/wallet/wallet';
+import Wallet_bonus_setup from './Component/wallet/wallet_bonus_setup';
+import Customer_loyalty_point_report from './Component/customer/customer_loyalty_point_report';
+import Add_new_vendor from './Component/vendor/add_new_vendor';
+import Vendor_list from './Component/vendor/vendor_list';
+import Withdraws from './Component/vendor/withdraws';
+import Withdraws_method_list from './Component/vendor/withdraw_method_list';
+import Add_new from './Component/delivery_men/add_new';
+import Deliverman_list from './Component/delivery_men/list';
 
 function App() {
   
@@ -39,6 +49,17 @@ function App() {
       < Product_report />
       < Product_stock />
       < Product_wish />
+      < Customer_list />
+      < Customer_reviews />
+      < Wallet />
+      < Wallet_bonus_setup />
+      < Customer_loyalty_point_report />
+      < Add_new_vendor />
+      < Vendor_list />
+      < Withdraws />
+      < Withdraws_method_list />
+      < Add_new />
+      < Deliverman_list />
     </div>
     
     </>

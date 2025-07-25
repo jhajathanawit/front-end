@@ -91,7 +91,7 @@ export default function Banner_setup() {
 
                 {/* ปุ่มด้านล่าง (อยู่ในกล่องขาว แต่นอกกล่องเทา) */}
                 <div className="flex justify-end px-4 pb-2">
-                    <button type="reset" className="px-4 py-2 border rounded text-gray-600 hover:bg-gray-100">Reset</button>
+                    <button type="reset" className="px-6 py-2 border rounded bg-gray-100 text-black-600 hover:bg-gray-200">Reset</button>
                     <button type="submit" className="ml-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save</button>
                 </div>
             </div>

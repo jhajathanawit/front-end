@@ -1,13 +1,13 @@
 import { FaFileExcel } from "react-icons/fa";
 import { MdRunningWithErrors } from "react-icons/md";
-import { GiWallet } from "react-icons/gi";
+import { BsStars } from "react-icons/bs";
 
-export default function Wallet() {
+export default function Customer_loyalty_point_report() {
     return (
         <>
             <div className="mb-4 flex items-center p-2 mt-6 gap-2">
-                <GiWallet className="text-2xl text-amber-700" />
-                <h1 className="text-2xl font-bold">Wallet</h1>
+                <BsStars className="text-2xl text-yellow-500" />
+                <h1 className="text-2xl font-bold">Customer Loyalty Point Report</h1>
             </div>
 
             <div className="p-4 shadow-md border rounded-md flex flex-col gap-4">

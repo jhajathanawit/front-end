@@ -1,7 +1,7 @@
 import Options from './list/option'
 import Total from './list/total';
 import List from './list/list';
-import Wallet from '../wallet/wallet';
+import Wallet from '../wallet/wallet_admin';
 import OrderStatic from './orderStatic/orderStatic';
 
 export default function Contents() {
