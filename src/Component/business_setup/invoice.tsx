@@ -207,6 +207,21 @@ export default function Invoice() {
                     </div>
                 </div>
             </div>
+
+            <div className="flex justify-end space-x-3 mt-6">
+                <button
+                    type="reset"
+                    className="px-10 py-2 border rounded bg-gray-100 text-gray-800 hover:bg-gray-200"
+                >
+                    Reset
+                </button>
+                <button
+                    type="submit"
+                    className="px-8 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                >
+                    Save information
+                </button>
+            </div>
         </>
     );
 }
