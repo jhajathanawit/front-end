@@ -1,17 +1,9 @@
-import { FaImage } from "react-icons/fa";
 import { IoIosPerson } from "react-icons/io";
 import { IoPersonSharp } from "react-icons/io5";
-import { CiImageOn } from "react-icons/ci";
-import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
-import React, { useState } from 'react';
 import { MdRunningWithErrors } from "react-icons/md";
-import { FiSearch } from "react-icons/fi";
-import { FaFileExcel } from "react-icons/fa";
-import { FaMoneyBillAlt } from "react-icons/fa";
 
 
 export default function Emergency_contact() {
-    const [showPassword, setShowPassword] = useState(false);
 
     return (
         <>

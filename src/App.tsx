@@ -31,6 +31,16 @@ import Emergency_contact from './Component/delivery_men/emergency_contact';
 import Employee_role_setup from './Component/employees/employee_role_setup';
 import Employees_list from './Component/employees/employees_list';
 import Business_setup from './Component/business_setup/business_setup';
+import Website_setup from './Component/business_setup/website_setup';
+import Vendors from './Component/business_setup/vendors';
+import Products from './Component/business_setup/products';
+import Delivery_men from './Component/business_setup/delivery_men';
+import Customer from './Component/business_setup/customer';
+import Orders from './Component/business_setup/orders';
+import Refund from './Component/business_setup/refund';
+import Shipping_method from './Component/business_setup/shipping_method';
+import Delivery_restriction from './Component/business_setup/delivery_restriction';
+import Invoice from './Component/business_setup/invoice';
 
 function App() {
   
@@ -70,6 +80,16 @@ function App() {
       < Employee_role_setup />
       < Employees_list />
       < Business_setup />
+      < Website_setup />
+      < Vendors />
+      < Products />
+      < Delivery_men />
+      < Customer />
+      < Orders />
+      < Refund />
+      < Shipping_method />
+      < Delivery_restriction />
+      < Invoice />
     </div>
     
     </>
